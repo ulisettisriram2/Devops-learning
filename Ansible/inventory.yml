@@ -1,0 +1,43 @@
+;no any block or group specified is called "orphans"172.12.123.11
+
+172.12.123.12
+172.12.123.13
+
+;database servers 
+[database]
+172.12.123.14
+172.12.123.15
+172.12.123.16
+
+;backend servers
+[backend]
+172.12.123.17
+172.12.123.18
+172.12.123.19
+
+;frontend servers
+[frontend]
+172.12.123.20
+172.12.123.21
+172.12.123.22
+
+;roboshop block contains other block or groups
+; group of groups
+[roboshop:children]
+frontend
+backend
+database
+
+[local]
+;local host can be a group
+localhost
+
+[local:vars]
+;variables can be defined for a group or block
+; course=ansible from inventory
+
+[frontend:vars]
+;variables can be defined for a particular group or block 
+course=ansible
+trainer=Sivakumar Reddy M
+duration=10 hrs
