@@ -1,0 +1,7 @@
+- name: Debug the erver
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: debug the server
+    debug:
+      msg: "Hello how are you"
