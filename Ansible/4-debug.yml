@@ -1,5 +1,5 @@
 - name: Debug the erver
-  hosts: frontend
+  hosts: frontend,backend
   become: yes
   tasks:
   - name: debug the server
