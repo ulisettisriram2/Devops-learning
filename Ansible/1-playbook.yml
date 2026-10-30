@@ -1,5 +1,5 @@
 - name: Ping test
-  hosts: localhost #testing local ping
+  hosts: local #testing local ping
   connection: local # local network - no credentials will be xpected
   tasks: #tasks == modules == collections
     - name: ping localhost
