@@ -1,0 +1,6 @@
+- name: vars from inventory file
+  hosts: frontend
+  tasks:
+  - name: Data will be printed from inventory files
+    debug:
+      msg: "Hi....this is {{ name }} from {{ place }}, i am {{ age }} years old"

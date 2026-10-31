@@ -11,7 +11,7 @@
     #entered value will not be visible
     private: true 
   tasks:
-  - name: Priniting the entered vales
+  - name: Priniting the entered values
     debug:
      msg: "Hi {{ Username }} your password is {{ Password }}"
   
