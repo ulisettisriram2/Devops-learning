@@ -1,0 +1,15 @@
+- name: Dynamic vars
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: Username
+    propmt: Please enter your user name
+    private: false #entered value will not be visible
+  - name: Password
+    propmt: Please enter your password
+    private: true #entered value will be visible
+  tasks:
+  - name: Priniting the entered vales
+    debug:
+     msg: "Hi {{ Username }} your password is {{ Password }}"
+  
