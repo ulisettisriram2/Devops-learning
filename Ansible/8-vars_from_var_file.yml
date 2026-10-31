@@ -7,7 +7,7 @@
   tasks:
   - name: Print var ifnormation
     debug:
-     msg: "Hi {{ name1 }}, i am from {{ place1 }}. I am {{ age1 }} years old"
+     msg: "Hi {{ var_file.name }}, i am from {{ var_file.place }}. I am {{ var_file.age }} years old"
   - name: Print var ifnormation
     debug:
-     msg: "Hi {{ name2 }}, i am from {{ place2 }}. I am {{ age2 }} years old" 
+     msg: "Hi {{ var2_file.name }}, i am from {{ var2_file.place }}. I am {{ var2_file.age }} years old"
