@@ -37,7 +37,7 @@
       msg: "Hi ... myself {{ var2_file.name }}, i am from {{ var2_file.place }}"
   tasks: 
    - name: Printing dynamically get values
-    vars_prompt:
+     vars_prompt:
       - name: name
         propmt: Enter your name
         private: false
