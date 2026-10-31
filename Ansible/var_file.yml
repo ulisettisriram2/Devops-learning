@@ -1,3 +1,4 @@
-name: sriram
-age: 37
-place: Gollavilli
+var_file:
+  name: sriram
+  age: 37
+  place: Gollavilli

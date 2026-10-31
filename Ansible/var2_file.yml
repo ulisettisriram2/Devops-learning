@@ -1,3 +1,4 @@
-name: Swetha
-age: 32
-place: Rajamahendravaram  
+var2_file:
+ name: Swetha
+ age: 32
+ place: Rajamahendravaram  
