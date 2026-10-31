@@ -55,4 +55,5 @@
     - name: password
       prompt: password
       private: true
-      
+    debug:
+      msg: "Hi {{ name }} , here is your password: {{ password }}"  
