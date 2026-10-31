@@ -8,4 +8,4 @@
   tasks:
     - name: print the vars
       debug:
-        msg: "Hi Everyine....myself {{ name }} . I am {{ age }} years old. I am from {{ place}} ."
+        msg: "Hi Everyine....myself {{ name }}. I am {{ age }} years old. I am from {{ place}}."
