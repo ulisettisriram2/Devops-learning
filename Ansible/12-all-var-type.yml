@@ -47,12 +47,12 @@
         debug:
           msg: "Hi {{ name }} and your age is {{ age }}"
   tasks:
-    - name: Take username and password from prompt and send it to command line
-      vars_prompt:
-      - name: username
-        prompt: Enter username
-        private: false
-      - name: password
-        prompt: password
-        private: true
+  - name: Take username and password from prompt and send it to command line
+    vars_prompt:
+    - name: username
+      prompt: Enter username
+      private: false
+    - name: password
+      prompt: password
+      private: true
       
