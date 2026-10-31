@@ -1,5 +1,5 @@
 - name: vars from inventory file
-  hosts: frontend
+  hosts: frontend,backend
   tasks:
   - name: Data will be printed from inventory files
     debug:
