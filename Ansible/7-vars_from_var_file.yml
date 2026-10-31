@@ -1,0 +1,13 @@
+- name: variable demo
+  connection: local
+  hosts: local
+  var_files:
+  - var_file.yml
+  tasks:
+    debug:
+      msg: "Hi {{ name }}, i am from {{ place }}. I am {{ age }} years old"
+  var_files:
+   - var2_file.yml
+  tasks:
+    debug:
+      msg: "Hi {{ name }}, i am from {{ place }}. I am {{ age }} years old"
