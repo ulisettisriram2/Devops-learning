@@ -3,11 +3,13 @@
   connection: local
   vars_prompt:
   - name: Username
-    propmt: Please enter your user name
-    private: false #entered value will not be visible
+    prompt: Please enter your user name
+    #entered value will be visible
+    private: false 
   - name: Password
-    propmt: Please enter your password
-    private: true #entered value will be visible
+    prompt: Please enter your password
+    #entered value will not be visible
+    private: true 
   tasks:
   - name: Priniting the entered vales
     debug:
