@@ -1,0 +1,53 @@
+- name: All type vars will be checked
+  hosts: all
+  vars:
+    name: Sriram
+    age: 37
+    place: Gollavilli
+  tasks:
+   - name: Printing local values
+     debug:
+      msg: "Hi ... myself {{ name }}, i am from {{ place }}"
+   - name: Printing task level values
+     vars:
+      name: Sriram
+      age: 37
+      place: Gollavilli
+     debug:
+      msg: "Hi ... myself {{ name }}, i am from {{ place }}"
+   - name: Printing var file values
+     vars_file:
+     - var_file.yml
+     - var2_file.yml
+     debug:
+      msg: "Hi ... myself {{ var_file.name }}, i am from {{ var_file.place }}"
+   - name: Printing var file values
+     vars_file:
+     - var_file.yml
+     debug:
+      msg: "Hi ... myself {{ var_file.name }}, i am from {{ var_file.place }}"
+   - name: Printing var2 file values
+     vars_file:
+     - var2_file.yml
+     debug:
+      msg: "Hi ... myself {{ var2_file.name }}, i am from {{ var2_file.place }}"
+   - name: Printing dynamically get values
+     vars_prompt:
+      - name: name
+        propmt: Enter your name
+        private: false
+      - name: age
+        prompt: Enter your age
+        private: false
+        debug:
+          msg: "Hi {{ name }} and your age is {{ age }}"
+   - name: Take username and password from prompt and send it to command line
+     vars_prompt:
+     - name: username
+       prompt: Enter username
+       private: false
+     - name: password
+       prompt: password
+       private: true
+     debug:
+      msg: "Hi {{ name }} , here is your password: {{ password }}"  
