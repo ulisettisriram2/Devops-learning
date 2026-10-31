@@ -1,0 +1,7 @@
+- name: command line var checking
+  hosts: frontend
+  tasks:
+   - name: Print the values of variables from command line
+     debug:
+      msg: "Hi {{ name }}, i am {{ age }} years old"
+    
