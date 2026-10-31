@@ -7,9 +7,3 @@
   - name: Print var ifnormation
     debug:
       msg: "Hi {{ name }}, i am from {{ place }}. I am {{ age }} years old"
- # vars_files:
-  - var2_file.yml
-  tasks:
-  - name: Print var ifnormation
-     debug:
-       msg: "Hi {{ name }}, i am from {{ place }}. I am {{ age }} years old"
