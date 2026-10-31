@@ -6,6 +6,9 @@
     age: "37"
     place: "Gollavilli"
   tasks:
+    - name: Print the vars
+      debug:
+        msg: "Hi Everyine....myself {{ name }}. I am {{ age }} years old. I am from {{ place}}."
     - name: print the vars
       vars:
         name: "Swetha"
