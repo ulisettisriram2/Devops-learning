@@ -1,6 +1,4 @@
-- name: var file
-  vars:
-    name: "Swetha"
-    age: "32"
-    place: "Rajamahendravaram"
+name: "Swetha"
+age: "32"
+place: "Rajamahendravaram"
   

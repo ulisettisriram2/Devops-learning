@@ -1,6 +1,3 @@
-- name: vars values
-  vars:
-    name: "sriram"
-    age: "37"
-    location: "Gollavilli"
-    
+name: "sriram"
+age: "37"
+location: "Gollavilli"
