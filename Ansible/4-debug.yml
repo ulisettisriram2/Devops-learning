@@ -1,7 +1,8 @@
 - name: Debug the erver
-  hosts: backend
+  hosts: frontend,backend
   become: yes
   tasks:
   - name: debug the server
     debug:
       msg: "Hello how are you"
+
