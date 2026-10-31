@@ -6,8 +6,8 @@
   tasks:
     debug:
       msg: "Hi {{ name }}, i am from {{ place }}. I am {{ age }} years old"
-  var_files:
+  #var_files:
    - var2_file.yml
-  tasks:
+  #tasks:
     debug:
       msg: "Hi {{ name }}, i am from {{ place }}. I am {{ age }} years old"
