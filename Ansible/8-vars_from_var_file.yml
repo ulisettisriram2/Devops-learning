@@ -1,0 +1,13 @@
+- name: variable demo
+  hosts: local
+  connection: local
+  vars_files:
+  - var_file.yml
+  - var2_file.yml
+  tasks:
+  - name: Print var ifnormation
+    debug:
+     msg: "Hi {{ var_file:name }}, i am from {{ var_file:place }}. I am {{ var_file:age }} years old"
+  - name: Print var ifnormation
+    debug:
+     msg: "Hi {{ var2_file:name }}, i am from {{ var2_file:place }}. I am {{ var2_file:age }} years old"
