@@ -4,3 +4,4 @@
   tasks:
    - name: user check
      ansible.builtin.command: id ansible
+     register: yes
