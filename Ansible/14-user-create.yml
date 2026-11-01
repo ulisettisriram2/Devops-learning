@@ -13,3 +13,11 @@
       shell: /bin/bash
       create_home: yes
       group: ansible
+  tasks:    
+   - name: user check
+     ansible.builten.getent:
+      database: passwd
+      key: ansible
+      #ignore_errors: yes
+
+      
