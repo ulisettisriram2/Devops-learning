@@ -3,7 +3,8 @@
   connection: local
   tasks:
    - name: user check
-     ansible.builtin.command: id ansible | awk '{print $1}' |awk -F= '{print $2}' 
+     #ansible.builtin.command: id ansible | awk '{print $1}' |awk -F= '{print $2}' 
+     shell: id ansible | awk '{print $1}' |awk -F= '{print $2}' 
      register: user_info
 
    - name: info print
