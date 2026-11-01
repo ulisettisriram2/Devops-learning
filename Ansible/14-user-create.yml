@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   tasks:
-    user:
-     name: ansible
-     state: present
-     shell: /bin/bash
-     create_home: yes
-     group: ansible
+   user:
+    name: ansible
+    state: present
+    shell: /bin/bash
+    create_home: yes
+    group: ansible
