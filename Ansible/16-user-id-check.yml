@@ -5,3 +5,7 @@
    - name: user check
      ansible.builtin.command: id ansible
      register: user_info
+
+   - name: info print
+     debug:
+      msg: "{{ user_info }}"
