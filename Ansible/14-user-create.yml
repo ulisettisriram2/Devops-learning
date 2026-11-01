@@ -14,7 +14,7 @@
       create_home: yes
       group: ansible 
    - name: user check
-     ansible.builten.getent:
+     ansible.builtin.getent:
       database: passwd
       key: ansible
       #ignore_errors: yes
