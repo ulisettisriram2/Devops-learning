@@ -3,7 +3,7 @@
   connection: local
   tasks:
    - name: user check
-     ansible.builtin.command: id ansible
+     ansible.builtin.command: id ansible --output table 
      register: user_info
 
    - name: info print
