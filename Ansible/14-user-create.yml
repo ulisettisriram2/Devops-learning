@@ -1,0 +1,11 @@
+- name: user creation in client server
+  hosts: local
+  connection: local
+  tasks:
+   - name: user add
+     user:
+     name: ansible
+     state: present
+     shell: /bin/bash
+     create_home: yes
+     group: ansible
