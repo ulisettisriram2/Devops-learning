@@ -12,8 +12,7 @@
       state: present
       shell: /bin/bash
       create_home: yes
-      group: ansible
-  tasks:    
+      group: ansible 
    - name: user check
      ansible.builten.getent:
       database: passwd
