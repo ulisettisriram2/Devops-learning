@@ -3,7 +3,7 @@
   hosts: local
   connection: local
   tasks:
-   user:
+   ansible.builtin.user:
     name: ansible
     state: present
     shell: /bin/bash
