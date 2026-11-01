@@ -3,9 +3,9 @@
   connection: local
   tasks:
    - name: user check
-     ansible.builtin.command: id ansible --output text
+     ansible.builtin.command: id ansible 
      register: user_info
 
    - name: info print
      debug:
-      msg: "{{ user_info }}"
+      msg: " {{ user_info.stdout }}"
