@@ -1,0 +1,11 @@
+- name: user creation in client server
+  hosts: local
+  connection: local
+  tasks:
+   - name: user check
+     ansible.builten.getent:
+      database: passwd
+      key: ansible
+      #ignore_errors: yes
+
+      
